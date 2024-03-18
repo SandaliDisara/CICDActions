@@ -1,0 +1,17 @@
+.container {
+    margin: 20px;
+}
+
+.heading {
+    color: #333;
+}
+
+.userList {
+    list-style: none;
+    padding: 0;
+}
+
+.userList li {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
