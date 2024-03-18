@@ -25,3 +25,7 @@ mongoose.connect(URL, { useNewUrlParser: true, useUnifiedTopology: true })
 app.listen(PORT, () => {
   console.log(`Server is up and running on port number: ${PORT} !`);
 });
+
+const userRouter = require("./Routes/userRoutes");
+
+app.use("/user", userRouter);
