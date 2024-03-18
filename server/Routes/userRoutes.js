@@ -11,16 +11,18 @@ const{
 const router = express.Router();    
 
 //insert new user
-router.post("/user", addNewUser);
+router.post("/addUser", addNewUser);
 
 //read all the users
-router.get("/userslist", viewAllUsers);
+router.get("/usersList", viewAllUsers);
 
 //get user by id
-router.get("/user/:id", getUserById);
+router.get("/getUser/:id", getUserById);
 
 //update details of user
-router.put("/userupdate/:id", updateUser);
+router.put("/userUpdate/:id", updateUser);
 
 //delete user
-router.delete("/userdelete/:id", deleteUser);
+router.delete("/userDelete/:id", deleteUser);
+
+module.exports = router;
